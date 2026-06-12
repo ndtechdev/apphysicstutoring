@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AP Physics Prep Tutoring</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="top-header">
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-icon">Φ</span>
+        <span>AP Physics Prep</span>
+      </div>
+
+      <button class="menu-btn" onclick="toggleMobileMenu()">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><button class="nav-tab active" onclick="showTab('home')">Home</button></li>
+        <li><button class="nav-tab" onclick="showTab('about')">About Us</button></li>
+        <li><button class="nav-tab" onclick="showTab('program')">Program</button></li>
+        <li><button class="nav-tab" onclick="showTab('rates')">Rates</button></li>
+        <li><button class="nav-tab" onclick="showTab('policy')">Policy</button></li>
+        <li><button class="nav-tab" onclick="showTab('feedback')">Feedback</button></li>
+        <li><button class="nav-tab contact-nav" onclick="showTab('contact')">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME TAB -->
+    <section id="home" class="tab-section active-section">
+      <div class="hero">
+        <div class="hero-content">
+          <p class="badge">Summer Prep for High School Students</p>
+
+          <h1>Build confidence before AP Physics starts.</h1>
+
+          <p class="hero-description">
+            A student-led AP Physics prep class designed to help students understand
+            the math, concepts, and problem-solving skills needed to succeed.
+          </p>
+
+          <div class="hero-buttons">
+<a href="https://forms.gle/9jz7jLmz2sJh3K5c7" target="_blank" class="btn primary-btn">
+  Reserve a Spot
+</a>            <button class="btn secondary-btn" onclick="showTab('program')">View Topics</button>
+            <button class="btn outline-btn" onclick="showTab('rates')">See Pricing</button>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>Class Overview</h3>
+
+          <div class="detail-row">
+            <span>Schedule</span>
+            <strong>2x a week</strong>
+          </div>
+
+          <div class="detail-row">
+            <span>Class Length</span>
+            <strong>1 hr 30 min</strong>
+          </div>
+
+          <div class="detail-row">
+            <span>Time</span>
+            <strong>7:30 PM</strong>
+          </div>
+
+          <div class="detail-row">
+            <span>Monthly Cost</span>
+            <strong>$120/month</strong>
+          </div>
+
+          <div class="price-note">
+            About <strong>$15 per class</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="quick-links">
+        <button onclick="showTab('about')">
+          <span>01</span>
+          Meet the Tutors
+        </button>
+
+        <button onclick="showTab('program')">
+          <span>02</span>
+          View Curriculum
+        </button>
+
+        <button onclick="showTab('policy')">
+          <span>03</span>
+          Class Policies
+        </button>
+
+        <button onclick="showTab('contact')">
+          <span>04</span>
+          Join the Class
+        </button>
+      </div>
+    </section>
+
+    <!-- ABOUT TAB -->
+    <section id="about" class="tab-section">
+      <div class="page-header">
+        <p class="badge">About Us</p>
+        <h2>Meet your tutors</h2>
+        <p>
+          We are students who have taken AP Physics and understand what makes the class challenging.
+        </p>
+      </div>
+
+      <div class="two-column">
+        <div class="info-card">
+          <h3>Nishtha & Ojal</h3>
+
+          <p>
+            Hi! Our names are <strong>Nishtha</strong> and <strong>Ojal</strong>.
+            We both took AP Physics 1 with Mr. Lee at Irvington High School, one of
+            the hardest AP Physics teachers, and earned test averages above 90%.
+          </p>
+
+          <p>
+            We have also tutored elementary students in introductory physics, so we
+            have experience explaining new concepts in a simple and clear way.
+          </p>
+
+          <p>
+            We are both taking Physics C next year and want to help students feel
+            more prepared before entering AP Physics.
+          </p>
+        </div>
+
+        <div class="vision-card">
+          <h3>Our Vision</h3>
+
+          <p>
+            AP Physics can feel overwhelming because it combines conceptual science,
+            algebra, trigonometry, and problem solving. Our goal is to help students
+            build a strong foundation early so they feel prepared, confident, and
+            ready to succeed.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM TAB -->
+    <section id="program" class="tab-section">
+      <div class="page-header">
+        <p class="badge">Semester Plan</p>
+        <h2>Topics covered</h2>
+        <p>
+          The class focuses on the prerequisite math and physics concepts students need before AP Physics.
+        </p>
+      </div>
+
+      <div class="topic-grid">
+        <div class="topic-card">
+          <div class="topic-icon">∑</div>
+          <h3>Algebra for Physics</h3>
+          <p>
+            Review equations, variables, units, graph reading, and solving for unknowns.
+          </p>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">△</div>
+          <h3>Trigonometry Basics</h3>
+          <p>
+            Learn sine, cosine, tangent, vectors, and components used in physics problems.
+          </p>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">→</div>
+          <h3>Motion</h3>
+          <p>
+            Understand position, velocity, acceleration, graphs, and kinematics equations.
+          </p>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">F</div>
+          <h3>Forces</h3>
+          <p>
+            Learn Newton’s Laws, free-body diagrams, friction, tension, and net force.
+          </p>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">E</div>
+          <h3>Energy & Momentum</h3>
+          <p>
+            Cover work, energy, conservation, impulse, and momentum-based problems.
+          </p>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon">↻</div>
+          <h3>Rotation & Waves</h3>
+          <p>
+            Introduce circular motion, torque, rotational concepts, and wave basics.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RATES TAB -->
+    <section id="rates" class="tab-section">
+      <div class="page-header">
+        <p class="badge">Rates</p>
+        <h2>Simple monthly pricing</h2>
+        <p>
+          Students pay monthly at the beginning of each month.
+        </p>
+      </div>
+
+      <div class="pricing-layout">
+        <div class="pricing-card">
+          <p class="pricing-label">Monthly Plan</p>
+          <h3>$120</h3>
+          <p class="pricing-subtitle">per month</p>
+
+          <div class="price-breakdown">
+            <p>2 classes per week</p>
+            <p>1 hour 30 minutes each</p>
+            <p>7:30 PM class time</p>
+            <p>About $15 per class</p>
+          </div>
+
+          <button class="btn primary-btn full-btn" onclick="showTab('contact')">
+            Sign Up
+          </button>
+        </div>
+
+        <div class="payment-card">
+          <h3>Ways to Pay</h3>
+
+          <div class="payment-options">
+            <div>Venmo</div>
+            <div>PayPal</div>
+            <div>Zelle</div>
+          </div>
+
+          <p>
+            Payment information will be shared after signup. Payment is due at
+            the start of each month.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- POLICY TAB -->
+    <section id="policy" class="tab-section">
+      <div class="page-header">
+        <p class="badge">Policy</p>
+        <h2>Class expectations</h2>
+        <p>
+          These policies help keep the class organized and useful for every student.
+        </p>
+      </div>
+
+      <div class="policy-grid">
+        <div class="policy-card">
+          <span>01</span>
+          <h3>Monthly Payment</h3>
+          <p>
+            Students pay by month through Venmo, PayPal, or Zelle.
+          </p>
+        </div>
+
+        <div class="policy-card">
+          <span>02</span>
+          <h3>Payment Deadline</h3>
+          <p>
+            Payment is due at the beginning of each month.
+          </p>
+        </div>
+
+        <div class="policy-card">
+          <span>03</span>
+          <h3>Absent Students</h3>
+          <p>
+            If a student is absent, a recorded video and all class materials will
+            be sent in the group chat.
+          </p>
+        </div>
+
+        <div class="policy-card">
+          <span>04</span>
+          <h3>Homework</h3>
+          <p>
+            Homework assignments are due the day before the next class.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEEDBACK TAB -->
+    <section id="feedback" class="tab-section">
+      <div class="page-header">
+        <p class="badge">Reviews & Feedback</p>
+        <h2>Share feedback</h2>
+        <p>
+          Students and parents can submit reviews or feedback using our Google Form.
+        </p>
+      </div>
+
+      <div class="feedback-card">
+        <h3>Feedback Form</h3>
+
+        <p>
+          This helps us improve the class, understand what students need help with,
+          and make future lessons better.
+        </p>
+
+        <!-- Replace # with your real Google Form link -->
+        <a href="https://forms.gle/i2W48NW357thY2XR6" target="_blank" class="btn primary-btn">
+          Open Google Form
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT TAB -->
+    <section id="contact" class="tab-section">
+      <div class="page-header">
+        <p class="badge">Contact</p>
+        <h2>Interested in joining?</h2>
+        <p>
+          Contact us to ask questions, reserve a spot, or receive payment details.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-card">
+          <h3>Contact Information</h3>
+
+          <div class="contact-line">
+            <span>Email</span>
+            <strong>bayarea.apphysicstutoring@gmail.com</strong>
+          </div>
+
+        
+
+          <div class="contact-line">
+            <span>Nishtha</span>
+            <strong>510-458-6733</strong>
+          </div>
+
+<div class="contact-line">
+            <span>Ojal</span>
+            <strong>341-786-8635</strong>
+          </div>
+
+          <div class="contact-buttons">
+  <a href="https://forms.gle/9jz7jLmz2sJh3K5c7" target="_blank" class="btn primary-btn">
+    Fill Out Interest Form
+  </a>
+
+  <a href="mailto:your-new-email@example.com" class="btn secondary-btn">
+    Email Us
+  </a>
+
+  <a href="sms:3417868635" class="btn secondary-btn">
+    Text Ojal
+  </a>
+
+  <a href="sms:5104586733" class="btn secondary-btn">
+    Text Nishtha
+  </a>
+</div>
+        </div>
+
+        <div class="signup-card">
+          <h3>Before joining, please include:</h3>
+
+          <ul>
+            <li>Student name</li>
+            <li>Grade level</li>
+            <li>School</li>
+            <li>Physics class they are preparing for</li>
+            <li>Any topics they are worried about</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 AP Physics Prep Tutoring | Nishtha & Ojal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

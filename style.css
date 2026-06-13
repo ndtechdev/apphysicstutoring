@@ -632,3 +632,197 @@ footer {
     font-size: 3rem;
   }
 }
+
+/* CURRICULUM SECTION */
+
+.curriculum-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.week-card {
+  background: white;
+  border: 1px solid #dbeafe;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 16px 38px rgba(15, 42, 95, 0.08);
+  transition: 0.2s ease;
+}
+
+.week-card:hover {
+  transform: translateY(-5px);
+  border-color: #93c5fd;
+  box-shadow: 0 20px 45px rgba(15, 42, 95, 0.13);
+}
+
+.week-header {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.week-header span {
+  display: inline-block;
+  background: #dbeafe;
+  color: #0f2a5f;
+  font-weight: 900;
+  padding: 7px 13px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+}
+
+.week-header h3 {
+  color: #0f172a;
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.class-block {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.class-block:last-child {
+  margin-bottom: 0;
+}
+
+.class-block h4 {
+  color: #0f2a5f;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.class-block ul {
+  padding-left: 20px;
+  color: #475569;
+}
+
+.class-block li {
+  margin-bottom: 8px;
+}
+
+.milestone-card {
+  background: linear-gradient(180deg, #ffffff, #eff6ff);
+  border-color: #bfdbfe;
+}
+
+.milestone-label {
+  display: inline-block;
+  background: #0f2a5f;
+  color: white;
+  padding: 8px 13px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+/* Mobile curriculum layout */
+@media (max-width: 850px) {
+  .curriculum-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MONTH 1 / MONTH 2 STRUCTURE CARDS */
+
+.month-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.month-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid #bfdbfe;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 16px 38px rgba(15, 42, 95, 0.08);
+  transition: 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.month-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(90deg, #0f2a5f, #2563eb, #60a5fa);
+}
+
+.month-card:hover {
+  transform: translateY(-6px);
+  border-color: #60a5fa;
+  box-shadow: 0 22px 48px rgba(15, 42, 95, 0.14);
+}
+
+.month-tag {
+  display: inline-block;
+  background: #dbeafe;
+  color: #0f2a5f;
+  font-weight: 900;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 16px;
+}
+
+.month-card h4 {
+  color: #0f172a;
+  font-size: 1.55rem;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.month-card p {
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.month-card strong {
+  color: #0f2a5f;
+  font-weight: 900;
+}
+
+/* Optional: make Month 2 slightly more blue */
+.month-card:nth-child(2) {
+  background: linear-gradient(180deg, #ffffff 0%, #eff6ff 100%);
+}
+
+/* Structure note under Month cards */
+
+.structure-note {
+  margin-top: 24px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #0f2a5f;
+  padding: 18px 20px;
+  border-radius: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+  box-shadow: 0 10px 24px rgba(15, 42, 95, 0.06);
+}
+
+.structure-note strong {
+  color: #0f172a;
+}
+
+/* Mobile layout */
+
+@media (max-width: 850px) {
+  .month-grid {
+    grid-template-columns: 1fr;
+  }
+}
